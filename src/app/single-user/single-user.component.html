@@ -1,0 +1,37 @@
+<div class="flex justify-center mt-24" *ngIf="user">
+   <div class="flex flex-col gap-2 border-2 p-4 font-bold">
+    <app-info-wrapper>
+        <p>Username:</p>
+        <p>{{user.username}}</p>
+    </app-info-wrapper>
+    <app-info-wrapper>
+    <p>Name:</p>
+    <p>{{user.name}}</p>
+    </app-info-wrapper>
+    <app-info-wrapper>
+    <p>Email:</p>
+    <p>{{user.email}}</p>
+    </app-info-wrapper>  
+    <div>
+        <p>Adress Info:</p>
+        <p>{{user.address.street}}</p>
+        <p>{{user.address.city}}</p>
+        <p>{{user.address.zipcode}}</p>
+    </div>
+    <app-info-wrapper>
+    <p>Phone number:</p>
+    <p>{{user.phone}}</p>
+    </app-info-wrapper>
+    <app-info-wrapper>
+        <p>Website:</p>
+        <p>{{user.website}}</p>
+    </app-info-wrapper>
+    <div>
+        <p>Company info:</p>
+        <p>{{user.company.name}}</p>
+        <p>{{user.company.bs}}</p>
+        <p>{{user.company.catchPhrase}}</p>
+    </div>
+    <button class="font-medium w-fit mx-auto px-5 py-2 border-[1px] rounded-md hover:bg-gray-200" routerLink="posts">Posts</button>
+   </div>
+</div>

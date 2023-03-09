@@ -1,0 +1,4 @@
+<div class="flex flex-col items-center mt-24" *ngIf="users">
+    <p class="font-bold mb-4">All Users</p>
+    <button class="w-60 mb-4 border-[1px] px-5 py-2 rouded-md hover:bg-gray-200" *ngFor="let user of users" [routerLink]="'user' + user.id">{{user.name}}</button>
+</div>
